@@ -16,6 +16,6 @@ function findByUsername(username) {
         .then(([user]) => user)
 }
 function findById(id) {
-    db('users').where({ id })
+    return db('users').where({ id })
         .then(([user]) => user)
 }
